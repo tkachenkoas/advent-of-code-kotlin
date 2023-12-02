@@ -1,3 +1,8 @@
+package day01
+
+import println
+import readInput
+
 fun main() {
     /**
      * The newly-improved calibration document consists of lines of text; each line originally contained a specific calibration value that the Elves now need to recover. On each line, the calibration value can be found by combining the first digit and the last digit (in that order) to form a single two-digit number.
@@ -84,16 +89,16 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
+    val testInput = readInput("day01/Day01_test")
     check(part1(testInput) == 142)
 
-    val testInputPart2 = readInput("Day01_part2_test")
+    val testInputPart2 = readInput("day01/Day01_part2_test")
     check(part2(testInputPart2) == 281)
 
     println("Day01")
     println("Part 1: ${part1(testInput)}")
 
-    val input = readInput("Day01")
+    val input = readInput("day01/Day01")
     part1(input).println()
     part2(input).println()
 }
